@@ -53,15 +53,10 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int[] number = new int[3];
-        number[0] = 1;
-        number[1] = 2;
-        number[2] = 3;
-        for (int i = 0; i < number.length; i++) {
-            if (number[i]%2 !=0) number[i]=number[i]+1;
-            System.out.print(number[i]);
-            if (i < 2) System.out.print(", ");
-            else System.out.print(".");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length-1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+
         }
     }
 }
